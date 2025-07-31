@@ -36,7 +36,7 @@ class Solution:
                 max_val = max(max_val, curr_val)
                 return
             enumerate(i+1, curr_val)
-            ## current general representation not functional, but displays correct pattern
+            ## current general representation not functional, but conveys correct pattern
             enumerate(i+1, curr_val operations[op] nums[i])
 
         
