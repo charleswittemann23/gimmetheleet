@@ -12,7 +12,8 @@ class Solution:
         for n in nums:
             max_val |= n
         
-        ## not quite dp solution, but relies on at every step, can make the choice to include or exclude value from array. Better word for this would be enumerate? everytime, make a choice to include or exclude, and continue recursion until we reach length of array
+        ## not quite dp solution, but relies on at every step, can make the choice to include or exclude value from array. 
+        # Better word for this would be enumerate? everytime, make a choice to include or exclude, and continue recursion until we reach length of array
         ## best visualization might be tree. Each step, branches down into further decisions
         def enumerate(i, curr_or):
             if i == len(nums):
@@ -27,7 +28,8 @@ class Solution:
     operations =['&', '|', '^']
     def countMaxgenSubsets(self,nums:List[int], op:str) -> int:
         max_val = 0
-        result_map = defaultdict(int) ## hashmap to keep track of all possible values we're finding from enumerated subsets, with value representing their frequency. K: 1 V: 3. The value 1 shows up in three subsets that use _ operation on each element in subset
+        result_map = defaultdict(int) ## hashmap to keep track of all possible values we're finding from enumerated subsets, with value representing their frequency. 
+        # K: 1 V: 3. The value 1 shows up in three subsets that use _ operation on each element in subset
 
         n = len(nums)
         def enumerate(i,curr_val):
