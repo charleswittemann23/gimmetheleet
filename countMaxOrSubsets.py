@@ -39,7 +39,7 @@ class Solution:
                 return
             enumerate(i+1, curr_val)
             ## current general representation not functional, but conveys correct pattern
-            enumerate(i+1, curr_val operations[op] nums[i])
+            #enumerate(i+1, curr_val operations[op] nums[i])
 
         
         enumerate(0,0)
